@@ -5,8 +5,8 @@ define('ROOT', dirname(dirname(__FILE__)));
 
 //Handy
 define('LIB', ROOT . DS . 'libraries' . DS);
-define('LIONLIB', LIB . 'lion' . DS);
- 
+define('LEONILIB', LIB . 'leoni' . DS);
+define('THIRDPARTY', LIB . '3rd' . DS);
 
 if (isSet($_GET['url'])){
     $url = $_GET['url'];

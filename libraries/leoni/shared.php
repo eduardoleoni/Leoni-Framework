@@ -75,8 +75,8 @@ function callHook() {
 /** Autoload any classes that are required **/
  
 function __autoload($className) {
-    if (file_exists(LIONLIB . strtolower($className) . '.class.php')) {
-        require_once(LIONLIB . strtolower($className) . '.class.php');
+    if (file_exists(LEONILIB . strtolower($className) . '.class.php')) {
+        require_once(LEONILIB . strtolower($className) . '.class.php');
     } else if (file_exists(ROOT . DS . 'app' . DS . 'controllers' . DS . strtolower($className) . '.php')) {
         require_once(ROOT . DS . 'app' . DS . 'controllers' . DS . strtolower($className) . '.php');
     } else if (file_exists(ROOT . DS . 'app' . DS . 'models' . DS . strtolower($className) . '.php')) {

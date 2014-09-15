@@ -85,8 +85,13 @@ function __autoload($className) {
         /* Error Generation Code Here */
     }
 }
+
+function loadThirdParty(){
+    require_once (THIRDPARTY . 'manager.php');
+}
  
 setReporting();
 removeMagicQuotes();
 unregisterGlobals();
+loadThirdParty();
 callHook();

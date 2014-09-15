@@ -2,7 +2,7 @@
  
 /** Configuration Variables **/
  
-define ('DEVELOPMENT_ENVIRONMENT',false);
+define ('DEVELOPMENT_ENVIRONMENT',TRUE);
  
 define('LEONI_DB_NAME', 'yourdatabasename');
 define('LEONI_DB_USER', 'yourusername');

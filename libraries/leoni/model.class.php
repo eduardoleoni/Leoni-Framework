@@ -4,7 +4,7 @@ class Model extends SQLQuery {
  
     function __construct() {
  
-        $this->connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+        $this->connect(LEONI_DB_HOST,LEONI_DB_USER,LEONI_DB_PASSWORD,LEONI_DB_NAME);
         $this->_model = get_class($this);
         $this->_table = strtolower($this->_model)."s";
     }

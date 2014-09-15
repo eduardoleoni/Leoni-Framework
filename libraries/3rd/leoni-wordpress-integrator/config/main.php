@@ -1,3 +1,3 @@
 <?php
-$wordpressConfig = array("folder"   => ROOT . "/../wordpressing");
+$wordpressConfig = array("folder"   => ROOT . "");
 

@@ -15,4 +15,4 @@ if (isSet($_GET['url'])){
 }
     
  
-require_once (LIONLIB . 'bootstrap.php');
+require_once (LEONILIB . 'bootstrap.php');

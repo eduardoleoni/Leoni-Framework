@@ -46,6 +46,7 @@ function unregisterGlobals() {
  
 /** Getting helpers available **/
 require_once(LEONILIB . DS . 'helpers' . DS . "HTML.php");
+require_once(LEONILIB . DS . 'helpers' . DS . "FORM.php");
 
 /** Main Call Function **/
  

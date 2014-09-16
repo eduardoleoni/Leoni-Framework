@@ -16,9 +16,10 @@ class Controller {
         $this->_controller = $controller;
         $this->_action = $action;
         $this->_model = $model;
- 
-        $this->$model = new $model;
+        if (class_exists($model))
+            $this->$model = new $model;
         $this->_template = new Template($controller,$action);
+        
  
     }
  

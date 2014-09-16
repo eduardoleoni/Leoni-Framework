@@ -63,8 +63,13 @@ function callHook() {
     $controller = ucwords($controller);
     $model = rtrim($controller, 's');
     $controller .= 'Controller';
-    $dispatch = new $controller($model,$controllerName,$action);
- 
+    if (class_exists($controller))
+        $dispatch = new $controller($model,$controllerName,$action);
+    else
+        echo "Class $controller doesn't exist";
+    
+   
+    
     if ((int)method_exists($controller, $action)) {
         call_user_func_array(array($dispatch,$action),$queryString);
     } else {

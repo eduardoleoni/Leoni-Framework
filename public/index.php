@@ -11,8 +11,9 @@ define('THIRDPARTY', LIB . '3rd' . DS);
 if (isSet($_GET['url'])){
     $url = $_GET['url'];
 }else{
-    $url = "/index";
+    $url = "index/index";
 }
+
     
  
 require_once (LEONILIB . 'bootstrap.php');

@@ -51,8 +51,8 @@ function callHook() {
  
     $urlArray = array();
     $urlArray = explode("/",$url);
- 
     $controller = $urlArray[0];
+    
     array_shift($urlArray);
     $action = $urlArray[0];
 
@@ -67,9 +67,7 @@ function callHook() {
         $dispatch = new $controller($model,$controllerName,$action);
     else
         echo "Class $controller doesn't exist";
-    
-   
-    
+
     if ((int)method_exists($controller, $action)) {
         call_user_func_array(array($dispatch,$action),$queryString);
     } else {

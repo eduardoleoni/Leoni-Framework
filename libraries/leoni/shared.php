@@ -44,6 +44,9 @@ function unregisterGlobals() {
     }
 }
  
+/** Getting helpers available **/
+require_once(LEONILIB . DS . 'helpers' . DS . "HTML.php");
+
 /** Main Call Function **/
  
 function callHook() {
